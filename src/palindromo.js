@@ -5,10 +5,6 @@ const port = process.env.port ? Number(process.env.port) : 3333;
 
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => {
-    res.send('robsonsss')
-  })
-
 app.post('/', (req, res) => {
     const texto = req.body.texto;
 
