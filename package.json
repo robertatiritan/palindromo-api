@@ -4,11 +4,18 @@
   "description": "projeto selecao TEIA ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx src/palindromo.ts",
+    "build": "tsup src",
+    "start": "node dist/palindromo.ts"
   },
   "author": "Roberta Tiritan Efrisio",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.1"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.2",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.3"
   }
 }

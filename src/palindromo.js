@@ -1,9 +1,13 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
-const port = 3333;
+const port = process.env.port ? Number(process.env.port) : 3333;
 
 app.use(bodyParser.json());
+
+app.get('/', (req, res) => {
+    res.send('robsonsss')
+  })
 
 app.post('/', (req, res) => {
     const texto = req.body.texto;
@@ -17,6 +21,7 @@ app.post('/', (req, res) => {
         ocorrencias_caracteres: contarCaracteres(texto)
     };
     res.json(retornojson);
+
 });
 
 function verificaPalindromo(texto) {
@@ -38,4 +43,5 @@ function contarCaracteres(texto) {
 }
 
 app.listen(port, () => {
+    console.log("server local ok")
 });
