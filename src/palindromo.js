@@ -12,11 +12,11 @@ app.post('/', (req, res) => {
         return res.status(400).json({ error: "A entrada nao pode estar vazia." });
     }
 
-    const result = {
+    const retornojson = {
         palindromo: verificaPalindromo(texto),
         ocorrencias_caracteres: contarCaracteres(texto)
     };
-    res.json(result);
+    res.json(retornojson);
 });
 
 function verificaPalindromo(texto) {
