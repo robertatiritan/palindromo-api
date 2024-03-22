@@ -1,0 +1,14 @@
+{
+  "name": "palindromo-api",
+  "version": "1.0.0",
+  "description": "projeto selecao TEIA ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Roberta Tiritan Efrisio",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.1"
+  }
+}
